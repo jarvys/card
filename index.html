@@ -10,11 +10,13 @@
 
         <script type="text/javascript" src="components/wechat-share/browser.min.js"></script>
         <script>
-        wechatshare({
-        title: "Join us",
-        desc: "This is a brilliant team!",
-        img_url: "http://mark.limijiaoyin.com/logo.png",
-        link: "http://mark.jarvys.me"
+        wechatshare(function(){
+			return {
+        		title: "Join us",
+        		desc: "This is a brilliant team!",
+        		img_url: "http://mark.limijiaoyin.com/logo.png",
+        		link: "http://mark.jarvys.me"
+			}
         });
         </script>
     </head>
