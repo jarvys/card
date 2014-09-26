@@ -60,6 +60,11 @@
         .icon > .icon-inner > .fa {
         line-height: 32px;
         }
+        .front {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        }
         .back {
         background: url(logo.png) center center no-repeat #3B9B3A;
         position: absolute;
@@ -67,17 +72,16 @@
         height: 100%;
         display: none;
         }
-
         .back p {
-            font-size: 18px;
-            color: #ebebeb;
-            font-weight: 200;
-            position: absolute;
-            width: 100%;
-            bottom: 0px;
-            text-align: center;
-            line-height: 60px;
-            margin-bottom: 0px;
+        font-size: 18px;
+        color: #ebebeb;
+        font-weight: 200;
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        text-align: center;
+        line-height: 60px;
+        margin-bottom: 0px;
         }
         </style>
     </head>
@@ -135,19 +139,19 @@
     </body>
     <script type="text/javascript" src="components/jquery/dist/jquery.min.js"></script>
     <script>
-        $(function() {
-            var front = true;
-            $('body').on('touchend', function() {
-                if(front) {
-                    front = false;
-                    $('.front').hide();
-                    $('.back').show();
-                } else {
-                    front = true;
-                    $('.front').show();
-                    $('.back').hide();
-                }
-            });
-        });
+    $(function() {
+    var front = true;
+    $('body').on('touchend', function() {
+    if(front) {
+    front = false;
+    $('.front').hide();
+    $('.back').show();
+    } else {
+    front = true;
+    $('.front').show();
+    $('.back').hide();
+    }
+    });
+    });
     </script>
 </html>
